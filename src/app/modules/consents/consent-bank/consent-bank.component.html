@@ -1,0 +1,20 @@
+<div class="ui-g-12 form-group">
+	<form [formGroup] = "formGroup" novalidate>
+		<div class="body"></div>
+				<div class="grad"></div>
+				<div class="header">
+					<div>Promoción<span>1</span></div>
+				</div>
+				<br>
+				<div class="login">
+						<input type="text" placeholder="Introduzca email" formControlName="user"><br>
+						<div class="custom-control custom-checkbox mb-3"> 
+							<input type="checkbox" class="custom-control-input" id="customCheck1"> 
+							<label class="custom-control-label" for="customCheck1"> I agree to the <a href="#" class="txt2 hov1"> Terms of User </a> </label> </div>   
+						<input type="button" value="Participar" (click)="AcceptForm()">
+				</div>
+	
+		
+	<app-consent-accept idContract=3></app-consent-accept>
+	</form>
+</div>

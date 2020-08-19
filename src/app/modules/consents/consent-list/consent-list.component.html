@@ -1,0 +1,26 @@
+
+<div class="table-responsive">
+    <table mdbTable class="table table-striped">
+        <caption>List of contracts</caption>
+        <thead>
+            <tr>
+                <th>#ID</th>
+                <th>Contract Title</th>
+                <th>Description</th>
+                <th>Ini Date</th>
+                <th>End Date</th>
+                <th>Company</th>              
+             </tr>
+        </thead>
+        <tbody>
+        <tr mdbTableCol *ngFor="let el of ItemsArray">
+            <th scope="row">{{el.id}}</th>
+            <td>{{el.contractTitle}}</td>
+            <td>{{el.contractText}}</td>
+            <td>{{el.contractdateini}}</td>
+            <td>{{el.contractdateend}}</td>
+            <td>{{el.company}}</td>
+        </tr>
+        </tbody>
+    </table>      
+</div>
